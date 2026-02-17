@@ -1,0 +1,60 @@
+spring:
+  application:
+    name: json-dataset-api-test
+
+ 
+  datasource:
+    url: jdbc:h2:mem:testdb;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+    
+    # Connection pool settings (smaller for tests)
+    hikari:
+      maximum-pool-size: 5
+      minimum-idle: 2
+      connection-timeout: 10000
+
+  # JPA/Hibernate Configuration
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop  # Create schema on startup, drop on shutdown
+    show-sql: true           # Log SQL statements
+    properties:
+      hibernate:
+        format_sql: true     # Format SQL for readability
+        use_sql_comments: true
+        jdbc:
+          batch_size: 10
+        order_inserts: true
+        order_updates: true
+
+  # H2 Console (useful for debugging tests)
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  # Jackson JSON Configuration
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+      indent-output: true
+    deserialization:
+      fail-on-unknown-properties: false
+
+# Server Configuration (for tests)
+server:
+  port: 0  # Random port (avoids conflicts)
+
+# Logging Configuration
+logging:
+  level:
+    root: INFO
+    com.freightfox.jsondataset: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.springframework.test: DEBUG
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"

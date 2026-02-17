@@ -1,0 +1,1553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.freightfox.jsondataset.controller.DatasetControllerIntegrationTest" time="10.131" tests="13" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Coding\Java\New_java\json-dataset-api\target\test-classes;C:\Coding\Java\New_java\json-dataset-api\target\classes;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.2\spring-boot-starter-web-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.2\spring-boot-starter-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.2\spring-boot-starter-logging-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\slf4j\jul-to-slf4j\2.0.11\jul-to-slf4j-2.0.11.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.2\spring-boot-starter-json-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.3\jackson-datatype-jdk8-2.15.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.3\jackson-datatype-jsr310-2.15.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.3\jackson-module-parameter-names-2.15.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.2\spring-boot-starter-tomcat-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.18\tomcat-embed-core-10.1.18.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.18\tomcat-embed-websocket-10.1.18.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-web\6.1.3\spring-web-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-beans\6.1.3\spring-beans-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\micrometer\micrometer-observation\1.12.2\micrometer-observation-1.12.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\micrometer\micrometer-commons\1.12.2\micrometer-commons-1.12.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-webmvc\6.1.3\spring-webmvc-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-aop\6.1.3\spring-aop-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-context\6.1.3\spring-context-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-expression\6.1.3\spring-expression-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.2\spring-boot-starter-data-jpa-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.2\spring-boot-starter-aop-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.2\spring-boot-starter-jdbc-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-jdbc\6.1.3\spring-jdbc-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\hibernate\orm\hibernate-core\6.4.1.Final\hibernate-core-6.4.1.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\data\spring-data-jpa\3.2.2\spring-data-jpa-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\data\spring-data-commons\3.2.2\spring-data-commons-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-orm\6.1.3\spring-orm-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-tx\6.1.3\spring-tx-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\slf4j\slf4j-api\2.0.11\slf4j-api-2.0.11.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-aspects\6.1.3\spring-aspects-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\postgresql\postgresql\42.7.1\postgresql-42.7.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\checkerframework\checker-qual\3.41.0\checker-qual-3.41.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.2.2\spring-boot-starter-validation-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.18\tomcat-embed-el-10.1.18.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\hypersistence\hypersistence-utils-hibernate-63\3.7.0\hypersistence-utils-hibernate-63-3.7.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\hypersistence\hypersistence-tsid\2.1.1\hypersistence-tsid-2.1.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-devtools\3.2.2\spring-boot-devtools-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot\3.2.2\spring-boot-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.2\spring-boot-autoconfigure-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-configuration-processor\3.2.2\spring-boot-configuration-processor-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.2\spring-boot-starter-test-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-test\3.2.2\spring-boot-test-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.2\spring-boot-test-autoconfigure-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-core\6.1.3\spring-core-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-jcl\6.1.3\spring-jcl-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-test\6.1.3\spring-test-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.11\byte-buddy-agent-1.14.11.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-webflux\3.2.2\spring-boot-starter-webflux-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-reactor-netty\3.2.2\spring-boot-starter-reactor-netty-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\projectreactor\netty\reactor-netty-http\1.1.15\reactor-netty-http-1.1.15.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-codec-http\4.1.105.Final\netty-codec-http-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-common\4.1.105.Final\netty-common-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-buffer\4.1.105.Final\netty-buffer-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-transport\4.1.105.Final\netty-transport-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-codec\4.1.105.Final\netty-codec-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-handler\4.1.105.Final\netty-handler-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-codec-http2\4.1.105.Final\netty-codec-http2-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-resolver-dns\4.1.105.Final\netty-resolver-dns-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-resolver\4.1.105.Final\netty-resolver-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-codec-dns\4.1.105.Final\netty-codec-dns-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.105.Final\netty-resolver-dns-native-macos-4.1.105.Final-osx-x86_64.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.105.Final\netty-resolver-dns-classes-macos-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-transport-native-epoll\4.1.105.Final\netty-transport-native-epoll-4.1.105.Final-linux-x86_64.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.105.Final\netty-transport-native-unix-common-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.105.Final\netty-transport-classes-epoll-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\projectreactor\netty\reactor-netty-core\1.1.15\reactor-netty-core-1.1.15.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-handler-proxy\4.1.105.Final\netty-handler-proxy-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-codec-socks\4.1.105.Final\netty-codec-socks-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-webflux\6.1.3\spring-webflux-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\projectreactor\reactor-core\3.6.2\reactor-core-3.6.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.10.7-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\INDIA TECHNOLOGY\AppData\Local\Temp\surefire17416242434282067709\surefirebooter-20260217100303846_3.jar C:\Users\INDIA TECHNOLOGY\AppData\Local\Temp\surefire17416242434282067709 2026-02-17T10-03-03_625-jvmRun1 surefire-20260217100303846_1tmp surefire_0-20260217100303846_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Coding\Java\New_java\json-dataset-api\target\test-classes;C:\Coding\Java\New_java\json-dataset-api\target\classes;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.2\spring-boot-starter-web-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.2\spring-boot-starter-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.2\spring-boot-starter-logging-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\slf4j\jul-to-slf4j\2.0.11\jul-to-slf4j-2.0.11.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.2\spring-boot-starter-json-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.3\jackson-datatype-jdk8-2.15.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.3\jackson-datatype-jsr310-2.15.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.3\jackson-module-parameter-names-2.15.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.2\spring-boot-starter-tomcat-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.18\tomcat-embed-core-10.1.18.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.18\tomcat-embed-websocket-10.1.18.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-web\6.1.3\spring-web-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-beans\6.1.3\spring-beans-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\micrometer\micrometer-observation\1.12.2\micrometer-observation-1.12.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\micrometer\micrometer-commons\1.12.2\micrometer-commons-1.12.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-webmvc\6.1.3\spring-webmvc-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-aop\6.1.3\spring-aop-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-context\6.1.3\spring-context-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-expression\6.1.3\spring-expression-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.2\spring-boot-starter-data-jpa-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.2\spring-boot-starter-aop-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.2\spring-boot-starter-jdbc-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-jdbc\6.1.3\spring-jdbc-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\hibernate\orm\hibernate-core\6.4.1.Final\hibernate-core-6.4.1.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\data\spring-data-jpa\3.2.2\spring-data-jpa-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\data\spring-data-commons\3.2.2\spring-data-commons-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-orm\6.1.3\spring-orm-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-tx\6.1.3\spring-tx-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\slf4j\slf4j-api\2.0.11\slf4j-api-2.0.11.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-aspects\6.1.3\spring-aspects-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\postgresql\postgresql\42.7.1\postgresql-42.7.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\checkerframework\checker-qual\3.41.0\checker-qual-3.41.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.2.2\spring-boot-starter-validation-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.18\tomcat-embed-el-10.1.18.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\hypersistence\hypersistence-utils-hibernate-63\3.7.0\hypersistence-utils-hibernate-63-3.7.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\hypersistence\hypersistence-tsid\2.1.1\hypersistence-tsid-2.1.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-devtools\3.2.2\spring-boot-devtools-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot\3.2.2\spring-boot-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.2\spring-boot-autoconfigure-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-configuration-processor\3.2.2\spring-boot-configuration-processor-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.2\spring-boot-starter-test-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-test\3.2.2\spring-boot-test-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.2\spring-boot-test-autoconfigure-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-core\6.1.3\spring-core-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-jcl\6.1.3\spring-jcl-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-test\6.1.3\spring-test-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.11\byte-buddy-agent-1.14.11.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-webflux\3.2.2\spring-boot-starter-webflux-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\boot\spring-boot-starter-reactor-netty\3.2.2\spring-boot-starter-reactor-netty-3.2.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\projectreactor\netty\reactor-netty-http\1.1.15\reactor-netty-http-1.1.15.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-codec-http\4.1.105.Final\netty-codec-http-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-common\4.1.105.Final\netty-common-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-buffer\4.1.105.Final\netty-buffer-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-transport\4.1.105.Final\netty-transport-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-codec\4.1.105.Final\netty-codec-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-handler\4.1.105.Final\netty-handler-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-codec-http2\4.1.105.Final\netty-codec-http2-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-resolver-dns\4.1.105.Final\netty-resolver-dns-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-resolver\4.1.105.Final\netty-resolver-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-codec-dns\4.1.105.Final\netty-codec-dns-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.105.Final\netty-resolver-dns-native-macos-4.1.105.Final-osx-x86_64.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.105.Final\netty-resolver-dns-classes-macos-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-transport-native-epoll\4.1.105.Final\netty-transport-native-epoll-4.1.105.Final-linux-x86_64.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.105.Final\netty-transport-native-unix-common-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.105.Final\netty-transport-classes-epoll-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\projectreactor\netty\reactor-netty-core\1.1.15\reactor-netty-core-1.1.15.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-handler-proxy\4.1.105.Final\netty-handler-proxy-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\netty\netty-codec-socks\4.1.105.Final\netty-codec-socks-4.1.105.Final.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\springframework\spring-webflux\6.1.3\spring-webflux-6.1.3.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\io\projectreactor\reactor-core\3.6.2\reactor-core-3.6.2.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\INDIA TECHNOLOGY\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\INDIA TECHNOLOGY"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.10.7-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Coding\Java\New_java\json-dataset-api"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\INDIA TECHNOLOGY\AppData\Local\Temp\surefire17416242434282067709\surefirebooter-20260217100303846_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.10+7-LTS"/>
+    <property name="user.name" value="INDIA TECHNOLOGY"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.10+7"/>
+    <property name="localRepository" value="C:\Users\INDIA TECHNOLOGY\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\INDIAT~1\AppData\Local\Temp\"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="21.0.10"/>
+    <property name="user.dir" value="C:\Coding\Java\New_java\json-dataset-api"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="11816"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.10.7-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-21.0.10.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\cursor\resources\app\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\apache-maven-3.9.12\bin;C:\Users\INDIA TECHNOLOGY\.local\bin;C:\Users\INDIA TECHNOLOGY\AppData\Local\Programs\Python\Launcher\;C:\Users\INDIA TECHNOLOGY\AppData\Local\Microsoft\WindowsApps;C:\Users\INDIA TECHNOLOGY\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\INDIA TECHNOLOGY\AppData\Roaming\npm;C:\Users\INDIA TECHNOLOGY\AppData\Local\Programs\Python\Python313;C:\Users\INDIA TECHNOLOGY\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\INDIA TECHNOLOGY\AppData\Local\Programs\Kiro\bin;C:\Users\INDIA TECHNOLOGY\AppData\Local\Programs\Windsurf\bin;C:\Users\INDIA TECHNOLOGY\AppData\Local\Programs\Antigravity\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.10+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="CONSOLE_LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss} - %msg%n"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[json-dataset-api] "/>
+  </properties>
+  <testcase name="testInsertRecord_Success" classname="com.freightfox.jsondataset.controller.DatasetControllerIntegrationTest" time="1.355">
+    <system-out><![CDATA[10:03:05.538 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.freightfox.jsondataset.controller.DatasetControllerIntegrationTest]: DatasetControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:03:05.726 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.freightfox.jsondataset.JsonDatasetApplication for test class com.freightfox.jsondataset.controller.DatasetControllerIntegrationTest
+10:03:05.970 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2026-02-17 10:03:06 - Starting DatasetControllerIntegrationTest using Java 21.0.10 with PID 11816 (started by INDIA TECHNOLOGY in C:\Coding\Java\New_java\json-dataset-api)
+2026-02-17 10:03:06 - Running with Spring Boot v3.2.2, Spring v6.1.3
+2026-02-17 10:03:06 - The following 1 profile is active: "test"
+2026-02-17 10:03:06 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@12a160c2
+2026-02-17 10:03:07 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-17 10:03:08 - Finished Spring Data repository scanning in 206 ms. Found 1 JPA repository interface.
+2026-02-17 10:03:08 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-17 10:03:08 - HHH000412: Hibernate ORM core version 6.4.1.Final
+2026-02-17 10:03:08 - HHH000026: Second-level cache disabled
+2026-02-17 10:03:09 - HikariPool-1 - Starting...
+2026-02-17 10:03:09 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-17 10:03:09 - HikariPool-1 - Start completed.
+2026-02-17 10:03:09 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-17 10:03:09 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-17 10:03:11 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-17 10:03:11 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-17 10:03:12 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-17 10:03:12 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-17 10:03:12 - 5 mappings in 'requestMappingHandlerMapping'
+2026-02-17 10:03:13 - Default resource handling disabled
+2026-02-17 10:03:13 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-02-17 10:03:13 - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-02-17 10:03:13 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-02-17 10:03:13 - Initializing Spring TestDispatcherServlet ''
+2026-02-17 10:03:13 - Initializing Servlet ''
+2026-02-17 10:03:13 - Completed initialization in 1 ms
+2026-02-17 10:03:13 - Started DatasetControllerIntegrationTest in 7.615 seconds (process running for 9.525)
+2026-02-17 10:03:14 - 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+Hibernate: 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+2026-02-17 10:03:14 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:14 - Read "application/json;charset=UTF-8" to [InsertRecordRequest(datasetName=users, data={name=John Doe, age=30, email=john@example.com})]
+2026-02-17 10:03:14 - POST /api/datasets/users/record - Inserting record
+2026-02-17 10:03:14 - Request body: InsertRecordRequest(datasetName=users, data={name=John Doe, age=30, email=john@example.com})
+2026-02-17 10:03:14 - Inserting record into dataset: users
+2026-02-17 10:03:14 - JSON validation successful. Serialized length: 75 chars
+2026-02-17 10:03:14 - Record inserted successfully. ID: d402e856-e888-4753-98b8-b6b0fd2f5d71, Dataset: users
+2026-02-17 10:03:14 - Record inserted successfully. ID: d402e856-e888-4753-98b8-b6b0fd2f5d71
+2026-02-17 10:03:14 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:14 - Writing [InsertRecordResponse(success=true, message=Record inserted successfully, recordId=d402e856-e888-4753 (truncated)...]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/datasets/users/record
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"148"]
+             Body = {
+  "valid" : true,
+  "dataset_name" : "users",
+  "data" : {
+    "name" : "John Doe",
+    "age" : 30,
+    "email" : "john@example.com"
+  }
+}
+    Session Attrs = {}
+
+Handler:
+             Type = com.freightfox.jsondataset.controller.DatasetController
+           Method = com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {
+  "success" : true,
+  "message" : "Record inserted successfully",
+  "record_id" : "d402e856-e888-4753-98b8-b6b0fd2f5d71",
+  "dataset_name" : "users",
+  "created_at" : "2026-02-17T10:03:14.6940823+05:30"
+}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2026-02-17 10:03:14 - 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-17 10:03:14 - 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0 
+    where
+        dr1_0.dataset_name=? 
+        and dr1_0.is_deleted=?
+Hibernate: 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0 
+    where
+        dr1_0.dataset_name=? 
+        and dr1_0.is_deleted=?
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\INDIA TECHNOLOGY\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.11\byte-buddy-agent-1.14.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="testInsertRecord_NullData" classname="com.freightfox.jsondataset.controller.DatasetControllerIntegrationTest" time="0.042">
+    <system-out><![CDATA[2026-02-17 10:03:14 - 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+Hibernate: 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+2026-02-17 10:03:14 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:14 - Read "application/json;charset=UTF-8" to [InsertRecordRequest(datasetName=users, data=null)]
+2026-02-17 10:03:14 - Using @ExceptionHandler com.freightfox.jsondataset.exception.GlobalExceptionHandler#handleValidationException(MethodArgumentNotValidException, HttpServletRequest)
+2026-02-17 10:03:14 - Validation error at /api/datasets/users/record: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.freightfox.jsondataset.dto.response.InsertRecordResponse> com.freightfox.jsondataset.controller.DatasetController.insertRecord(java.lang.String,com.freightfox.jsondataset.dto.request.InsertRecordRequest): [Field error in object 'insertRecordRequest' on field 'data': rejected value [null]; codes [NotNull.insertRecordRequest.data,NotNull.data,NotNull.java.util.Map,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [insertRecordRequest.data,data]; arguments []; default message [data]]; default message [Data is required and cannot be null]] 
+2026-02-17 10:03:14 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:14 - Writing [ErrorResponse(timestamp=2026-02-17T10:03:14.985587500, status=400, error=Bad Request, message=Reques (truncated)...]
+2026-02-17 10:03:14 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.freightfox.jsondataset.dto.response.InsertRecordResponse> com.freightfox.jsondataset.controller.DatasetController.insertRecord(java.lang.String,com.freightfox.jsondataset.dto.request.InsertRecordRequest): [Field error in object 'insertRecordRequest' on field 'data': rejected value [null]; codes [NotNull.insertRecordRequest.data,NotNull.data,NotNull.java.util.Map,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [insertRecordRequest.data,data]; arguments []; default message [data]]; default message [Data is required and cannot be null]] ]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/datasets/users/record
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"50"]
+             Body = {
+    "dataset_name": "users",
+    "data": null
+}
+
+    Session Attrs = {}
+
+Handler:
+             Type = com.freightfox.jsondataset.controller.DatasetController
+           Method = com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.web.bind.MethodArgumentNotValidException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {
+  "timestamp" : "2026-02-17T10:03:14",
+  "status" : 400,
+  "error" : "Bad Request",
+  "message" : "Request validation failed",
+  "details" : [ "data: Data is required and cannot be null" ],
+  "path" : "/api/datasets/users/record",
+  "code" : "VALIDATION_ERROR"
+}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="testInsertRecord_MissingFields" classname="com.freightfox.jsondataset.controller.DatasetControllerIntegrationTest" time="0.015">
+    <system-out><![CDATA[2026-02-17 10:03:15 - 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+Hibernate: 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+2026-02-17 10:03:15 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:15 - Read "application/json;charset=UTF-8" to [InsertRecordRequest(datasetName=null, data={name=John})]
+2026-02-17 10:03:15 - Using @ExceptionHandler com.freightfox.jsondataset.exception.GlobalExceptionHandler#handleValidationException(MethodArgumentNotValidException, HttpServletRequest)
+2026-02-17 10:03:15 - Validation error at /api/datasets/users/record: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.freightfox.jsondataset.dto.response.InsertRecordResponse> com.freightfox.jsondataset.controller.DatasetController.insertRecord(java.lang.String,com.freightfox.jsondataset.dto.request.InsertRecordRequest): [Field error in object 'insertRecordRequest' on field 'datasetName': rejected value [null]; codes [NotBlank.insertRecordRequest.datasetName,NotBlank.datasetName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [insertRecordRequest.datasetName,datasetName]; arguments []; default message [datasetName]]; default message [Dataset name is required and cannot be blank]] 
+2026-02-17 10:03:15 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:15 - Writing [ErrorResponse(timestamp=2026-02-17T10:03:15.015609900, status=400, error=Bad Request, message=Reques (truncated)...]
+2026-02-17 10:03:15 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.freightfox.jsondataset.dto.response.InsertRecordResponse> com.freightfox.jsondataset.controller.DatasetController.insertRecord(java.lang.String,com.freightfox.jsondataset.dto.request.InsertRecordRequest): [Field error in object 'insertRecordRequest' on field 'datasetName': rejected value [null]; codes [NotBlank.insertRecordRequest.datasetName,NotBlank.datasetName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [insertRecordRequest.datasetName,datasetName]; arguments []; default message [datasetName]]; default message [Dataset name is required and cannot be blank]] ]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/datasets/users/record
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"33"]
+             Body = {
+    "data": {"name": "John"}
+}
+
+    Session Attrs = {}
+
+Handler:
+             Type = com.freightfox.jsondataset.controller.DatasetController
+           Method = com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.web.bind.MethodArgumentNotValidException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {
+  "timestamp" : "2026-02-17T10:03:15",
+  "status" : 400,
+  "error" : "Bad Request",
+  "message" : "Request validation failed",
+  "details" : [ "datasetName: Dataset name is required and cannot be blank" ],
+  "path" : "/api/datasets/users/record",
+  "code" : "VALIDATION_ERROR"
+}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="testHealthEndpoint" classname="com.freightfox.jsondataset.controller.DatasetControllerIntegrationTest" time="0.028">
+    <system-out><![CDATA[2026-02-17 10:03:15 - 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+Hibernate: 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+2026-02-17 10:03:15 - Mapped to com.freightfox.jsondataset.controller.DatasetController#health()
+2026-02-17 10:03:15 - GET /api/datasets/health - Health check
+2026-02-17 10:03:15 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:15 - Writing [DatasetController.HealthResponse(status=UP, message=Dataset API is running)]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/datasets/health
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.freightfox.jsondataset.controller.DatasetController
+           Method = com.freightfox.jsondataset.controller.DatasetController#health()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {
+  "status" : "UP",
+  "message" : "Dataset API is running"
+}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="testInsertRecord_EmptyBody" classname="com.freightfox.jsondataset.controller.DatasetControllerIntegrationTest" time="0.019">
+    <system-out><![CDATA[2026-02-17 10:03:15 - 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+Hibernate: 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+2026-02-17 10:03:15 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:15 - Read "application/json;charset=UTF-8" to []
+2026-02-17 10:03:15 - Using @ExceptionHandler com.freightfox.jsondataset.exception.GlobalExceptionHandler#handleMalformedJsonException(HttpMessageNotReadableException, HttpServletRequest)
+2026-02-17 10:03:15 - Malformed JSON at /api/datasets/users/record: Required request body is missing: public org.springframework.http.ResponseEntity<com.freightfox.jsondataset.dto.response.InsertRecordResponse> com.freightfox.jsondataset.controller.DatasetController.insertRecord(java.lang.String,com.freightfox.jsondataset.dto.request.InsertRecordRequest)
+2026-02-17 10:03:15 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:15 - Writing [ErrorResponse(timestamp=2026-02-17T10:03:15.069866900, status=400, error=Bad Request, message=Malfor (truncated)...]
+2026-02-17 10:03:15 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.freightfox.jsondataset.dto.response.InsertRecordResponse> com.freightfox.jsondataset.controller.DatasetController.insertRecord(java.lang.String,com.freightfox.jsondataset.dto.request.InsertRecordRequest)]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/datasets/users/record
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = 
+    Session Attrs = {}
+
+Handler:
+             Type = com.freightfox.jsondataset.controller.DatasetController
+           Method = com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.http.converter.HttpMessageNotReadableException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {
+  "timestamp" : "2026-02-17T10:03:15",
+  "status" : 400,
+  "error" : "Bad Request",
+  "message" : "Malformed JSON in request body",
+  "details" : [ "Required request body is missing: public org.springframework.http.ResponseEntity<com.freightfox.jsondataset.dto.response.InsertRecordResponse> com.freightfox.jsondataset.controller.DatasetController.insertRecord(java.lang.String,com.freightfox.jsondataset.dto.request.InsertRecordRequest)" ],
+  "path" : "/api/datasets/users/record",
+  "code" : "MALFORMED_JSON"
+}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="testInsertRecord_EmptyData" classname="com.freightfox.jsondataset.controller.DatasetControllerIntegrationTest" time="0.023">
+    <system-out><![CDATA[2026-02-17 10:03:15 - 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+Hibernate: 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+2026-02-17 10:03:15 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:15 - Read "application/json;charset=UTF-8" to [InsertRecordRequest(datasetName=users, data={})]
+2026-02-17 10:03:15 - POST /api/datasets/users/record - Inserting record
+2026-02-17 10:03:15 - Request body: InsertRecordRequest(datasetName=users, data={})
+2026-02-17 10:03:15 - Inserting record into dataset: users
+2026-02-17 10:03:15 - JSON validation successful. Serialized length: 3 chars
+2026-02-17 10:03:15 - Record inserted successfully. ID: ac91aadb-fa82-41a2-a5c8-b2680d2b1fb1, Dataset: users
+2026-02-17 10:03:15 - Record inserted successfully. ID: ac91aadb-fa82-41a2-a5c8-b2680d2b1fb1
+2026-02-17 10:03:15 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:15 - Writing [InsertRecordResponse(success=true, message=Record inserted successfully, recordId=ac91aadb-fa82-41a2 (truncated)...]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/datasets/users/record
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"68"]
+             Body = {
+  "valid" : true,
+  "dataset_name" : "users",
+  "data" : { }
+}
+    Session Attrs = {}
+
+Handler:
+             Type = com.freightfox.jsondataset.controller.DatasetController
+           Method = com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {
+  "success" : true,
+  "message" : "Record inserted successfully",
+  "record_id" : "ac91aadb-fa82-41a2-a5c8-b2680d2b1fb1",
+  "dataset_name" : "users",
+  "created_at" : "2026-02-17T10:03:15.0917908+05:30"
+}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2026-02-17 10:03:15 - 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-17 10:03:15 - 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0 
+    where
+        dr1_0.dataset_name=? 
+        and dr1_0.is_deleted=?
+Hibernate: 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0 
+    where
+        dr1_0.dataset_name=? 
+        and dr1_0.is_deleted=?
+]]></system-out>
+  </testcase>
+  <testcase name="testInsertRecord_BlankDatasetName" classname="com.freightfox.jsondataset.controller.DatasetControllerIntegrationTest" time="0.021">
+    <system-out><![CDATA[2026-02-17 10:03:15 - 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+Hibernate: 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+2026-02-17 10:03:15 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:15 - Read "application/json;charset=UTF-8" to [InsertRecordRequest(datasetName=   , data={name=John})]
+2026-02-17 10:03:15 - Using @ExceptionHandler com.freightfox.jsondataset.exception.GlobalExceptionHandler#handleValidationException(MethodArgumentNotValidException, HttpServletRequest)
+2026-02-17 10:03:15 - Validation error at /api/datasets/%20%20%20/record: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.freightfox.jsondataset.dto.response.InsertRecordResponse> com.freightfox.jsondataset.controller.DatasetController.insertRecord(java.lang.String,com.freightfox.jsondataset.dto.request.InsertRecordRequest): [Field error in object 'insertRecordRequest' on field 'datasetName': rejected value [   ]; codes [NotBlank.insertRecordRequest.datasetName,NotBlank.datasetName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [insertRecordRequest.datasetName,datasetName]; arguments []; default message [datasetName]]; default message [Dataset name is required and cannot be blank]] 
+2026-02-17 10:03:15 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:15 - Writing [ErrorResponse(timestamp=2026-02-17T10:03:15.114296400, status=400, error=Bad Request, message=Reques (truncated)...]
+2026-02-17 10:03:15 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.freightfox.jsondataset.dto.response.InsertRecordResponse> com.freightfox.jsondataset.controller.DatasetController.insertRecord(java.lang.String,com.freightfox.jsondataset.dto.request.InsertRecordRequest): [Field error in object 'insertRecordRequest' on field 'datasetName': rejected value [   ]; codes [NotBlank.insertRecordRequest.datasetName,NotBlank.datasetName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [insertRecordRequest.datasetName,datasetName]; arguments []; default message [datasetName]]; default message [Dataset name is required and cannot be blank]] ]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/datasets/%20%20%20/record
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"91"]
+             Body = {
+  "valid" : false,
+  "dataset_name" : "   ",
+  "data" : {
+    "name" : "John"
+  }
+}
+    Session Attrs = {}
+
+Handler:
+             Type = com.freightfox.jsondataset.controller.DatasetController
+           Method = com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.web.bind.MethodArgumentNotValidException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {
+  "timestamp" : "2026-02-17T10:03:15",
+  "status" : 400,
+  "error" : "Bad Request",
+  "message" : "Request validation failed",
+  "details" : [ "datasetName: Dataset name is required and cannot be blank" ],
+  "path" : "/api/datasets/%20%20%20/record",
+  "code" : "VALIDATION_ERROR"
+}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="testInsertRecord_NestedData" classname="com.freightfox.jsondataset.controller.DatasetControllerIntegrationTest" time="0.032">
+    <system-out><![CDATA[2026-02-17 10:03:15 - 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+Hibernate: 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+2026-02-17 10:03:15 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:15 - Read "application/json;charset=UTF-8" to [InsertRecordRequest(datasetName=users, data={address={zip=10001, city=New York}, name=John Doe, tags (truncated)...]
+2026-02-17 10:03:15 - POST /api/datasets/users/record - Inserting record
+2026-02-17 10:03:15 - Request body: InsertRecordRequest(datasetName=users, data={address={zip=10001, city=New York}, name=John Doe, tags=[developer, java]})
+2026-02-17 10:03:15 - Inserting record into dataset: users
+2026-02-17 10:03:15 - JSON validation successful. Serialized length: 134 chars
+2026-02-17 10:03:15 - Record inserted successfully. ID: 5f01e7c3-0158-4a4e-bc15-d955c7ace365, Dataset: users
+2026-02-17 10:03:15 - Record inserted successfully. ID: 5f01e7c3-0158-4a4e-bc15-d955c7ace365
+2026-02-17 10:03:15 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:15 - Writing [InsertRecordResponse(success=true, message=Record inserted successfully, recordId=5f01e7c3-0158-4a4e (truncated)...]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/datasets/users/record
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"213"]
+             Body = {
+  "valid" : true,
+  "dataset_name" : "users",
+  "data" : {
+    "address" : {
+      "zip" : "10001",
+      "city" : "New York"
+    },
+    "name" : "John Doe",
+    "tags" : [ "developer", "java" ]
+  }
+}
+    Session Attrs = {}
+
+Handler:
+             Type = com.freightfox.jsondataset.controller.DatasetController
+           Method = com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {
+  "success" : true,
+  "message" : "Record inserted successfully",
+  "record_id" : "5f01e7c3-0158-4a4e-bc15-d955c7ace365",
+  "dataset_name" : "users",
+  "created_at" : "2026-02-17T10:03:15.1497721+05:30"
+}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2026-02-17 10:03:15 - 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-17 10:03:15 - 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0 
+    where
+        dr1_0.dataset_name=? 
+        and dr1_0.is_deleted=?
+Hibernate: 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0 
+    where
+        dr1_0.dataset_name=? 
+        and dr1_0.is_deleted=?
+]]></system-out>
+  </testcase>
+  <testcase name="testInsertRecord_UnsupportedMediaType" classname="com.freightfox.jsondataset.controller.DatasetControllerIntegrationTest" time="0.02">
+    <system-out><![CDATA[2026-02-17 10:03:15 - 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+Hibernate: 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+2026-02-17 10:03:15 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:15 - Could not resolve parameter [1] in public org.springframework.http.ResponseEntity<com.freightfox.jsondataset.dto.response.InsertRecordResponse> com.freightfox.jsondataset.controller.DatasetController.insertRecord(java.lang.String,com.freightfox.jsondataset.dto.request.InsertRecordRequest): Content-Type 'text/plain;charset=UTF-8' is not supported
+2026-02-17 10:03:15 - Using @ExceptionHandler com.freightfox.jsondataset.exception.GlobalExceptionHandler#handleUnsupportedMediaTypeException(HttpMediaTypeNotSupportedException, HttpServletRequest)
+2026-02-17 10:03:15 - Unsupported media type at /api/datasets/users/record: Content-Type 'text/plain;charset=UTF-8' is not supported
+2026-02-17 10:03:15 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:15 - Writing [ErrorResponse(timestamp=2026-02-17T10:03:15.177395100, status=415, error=Unsupported Media Type, mes (truncated)...]
+2026-02-17 10:03:15 - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain;charset=UTF-8' is not supported]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/datasets/users/record
+       Parameters = {}
+          Headers = [Content-Type:"text/plain;charset=UTF-8", Content-Length:"34"]
+             Body = {"dataset_name":"users","data":{}}
+    Session Attrs = {}
+
+Handler:
+             Type = com.freightfox.jsondataset.controller.DatasetController
+           Method = com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.web.HttpMediaTypeNotSupportedException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 415
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {
+  "timestamp" : "2026-02-17T10:03:15",
+  "status" : 415,
+  "error" : "Unsupported Media Type",
+  "message" : "Unsupported media type 'text/plain;charset=UTF-8'",
+  "details" : [ "Supported types: application/json, application/*+json" ],
+  "path" : "/api/datasets/users/record",
+  "code" : "UNSUPPORTED_MEDIA_TYPE"
+}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="testInsertRecord_DatasetNameMismatch" classname="com.freightfox.jsondataset.controller.DatasetControllerIntegrationTest" time="0.025">
+    <system-out><![CDATA[2026-02-17 10:03:15 - 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+Hibernate: 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+2026-02-17 10:03:15 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:15 - Read "application/json;charset=UTF-8" to [InsertRecordRequest(datasetName=products, data={name=Product A})]
+2026-02-17 10:03:15 - POST /api/datasets/users/record - Inserting record
+2026-02-17 10:03:15 - Request body: InsertRecordRequest(datasetName=products, data={name=Product A})
+2026-02-17 10:03:15 - Dataset name mismatch. Path: users, Body: products
+2026-02-17 10:03:15 - Inserting record into dataset: users
+2026-02-17 10:03:15 - JSON validation successful. Serialized length: 28 chars
+2026-02-17 10:03:15 - Record inserted successfully. ID: 459533d3-dd22-4d1a-b63a-3dfc3e8e2d55, Dataset: users
+2026-02-17 10:03:15 - Record inserted successfully. ID: 459533d3-dd22-4d1a-b63a-3dfc3e8e2d55
+2026-02-17 10:03:15 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:15 - Writing [InsertRecordResponse(success=true, message=Record inserted successfully, recordId=459533d3-dd22-4d1a (truncated)...]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/datasets/users/record
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"100"]
+             Body = {
+  "valid" : true,
+  "dataset_name" : "products",
+  "data" : {
+    "name" : "Product A"
+  }
+}
+    Session Attrs = {}
+
+Handler:
+             Type = com.freightfox.jsondataset.controller.DatasetController
+           Method = com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {
+  "success" : true,
+  "message" : "Record inserted successfully",
+  "record_id" : "459533d3-dd22-4d1a-b63a-3dfc3e8e2d55",
+  "dataset_name" : "users",
+  "created_at" : "2026-02-17T10:03:15.1963328+05:30"
+}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2026-02-17 10:03:15 - 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-17 10:03:15 - 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0 
+    where
+        dr1_0.dataset_name=? 
+        and dr1_0.is_deleted=?
+Hibernate: 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0 
+    where
+        dr1_0.dataset_name=? 
+        and dr1_0.is_deleted=?
+]]></system-out>
+  </testcase>
+  <testcase name="testInsertRecord_InvalidDatasetName" classname="com.freightfox.jsondataset.controller.DatasetControllerIntegrationTest" time="0.014">
+    <system-out><![CDATA[2026-02-17 10:03:15 - 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+Hibernate: 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+2026-02-17 10:03:15 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:15 - Read "application/json;charset=UTF-8" to [InsertRecordRequest(datasetName=invalid dataset!, data={name=John})]
+2026-02-17 10:03:15 - POST /api/datasets/invalid%20dataset!/record - Inserting record
+2026-02-17 10:03:15 - Request body: InsertRecordRequest(datasetName=invalid dataset!, data={name=John})
+2026-02-17 10:03:15 - Dataset name mismatch. Path: invalid%20dataset!, Body: invalid dataset!
+2026-02-17 10:03:15 - Inserting record into dataset: invalid%20dataset!
+2026-02-17 10:03:15 - Validation failed for dataset invalid%20dataset!: Dataset name validation failed: Dataset name validation failed: Dataset name must start with letter or underscore and contain only alphanumeric characters, underscores, or hyphens
+2026-02-17 10:03:15 - Using @ExceptionHandler com.freightfox.jsondataset.exception.GlobalExceptionHandler#handleDatasetValidationException(DatasetValidationException, HttpServletRequest)
+2026-02-17 10:03:15 - Dataset validation error at /api/datasets/invalid%2520dataset!/record: Dataset name validation failed: Dataset name validation failed: Dataset name must start with letter or underscore and contain only alphanumeric characters, underscores, or hyphens
+2026-02-17 10:03:15 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:15 - Writing [ErrorResponse(timestamp=2026-02-17T10:03:15.220646800, status=400, error=Bad Request, message=Datase (truncated)...]
+2026-02-17 10:03:15 - Resolved [com.freightfox.jsondataset.exception.DatasetValidationException: Dataset name validation failed: Dataset name validation failed: Dataset name must start with letter or underscore and contain only alphanumeric characters, underscores, or hyphens]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/datasets/invalid%2520dataset!/record
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"103"]
+             Body = {
+  "valid" : true,
+  "dataset_name" : "invalid dataset!",
+  "data" : {
+    "name" : "John"
+  }
+}
+    Session Attrs = {}
+
+Handler:
+             Type = com.freightfox.jsondataset.controller.DatasetController
+           Method = com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.freightfox.jsondataset.exception.DatasetValidationException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {
+  "timestamp" : "2026-02-17T10:03:15",
+  "status" : 400,
+  "error" : "Bad Request",
+  "message" : "Dataset name validation failed: Dataset name validation failed: Dataset name must start with letter or underscore and contain only alphanumeric characters, underscores, or hyphens",
+  "details" : [ "Dataset name must start with letter or underscore and contain only alphanumeric characters, underscores, or hyphens" ],
+  "path" : "/api/datasets/invalid%2520dataset!/record",
+  "code" : "DATASET_VALIDATION_ERROR"
+}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="testInsertRecord_MultipleInserts" classname="com.freightfox.jsondataset.controller.DatasetControllerIntegrationTest" time="0.08">
+    <system-out><![CDATA[2026-02-17 10:03:15 - 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+Hibernate: 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+2026-02-17 10:03:15 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:15 - Read "application/json;charset=UTF-8" to [InsertRecordRequest(datasetName=users, data={index=0, name=User 0})]
+2026-02-17 10:03:15 - POST /api/datasets/users/record - Inserting record
+2026-02-17 10:03:15 - Request body: InsertRecordRequest(datasetName=users, data={index=0, name=User 0})
+2026-02-17 10:03:15 - Inserting record into dataset: users
+2026-02-17 10:03:15 - JSON validation successful. Serialized length: 41 chars
+2026-02-17 10:03:15 - Record inserted successfully. ID: 7d6dac3c-3246-4718-bec5-f72a47af9864, Dataset: users
+2026-02-17 10:03:15 - Record inserted successfully. ID: 7d6dac3c-3246-4718-bec5-f72a47af9864
+2026-02-17 10:03:15 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:15 - Writing [InsertRecordResponse(success=true, message=Record inserted successfully, recordId=7d6dac3c-3246-4718 (truncated)...]
+2026-02-17 10:03:15 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:15 - Read "application/json;charset=UTF-8" to [InsertRecordRequest(datasetName=users, data={index=1, name=User 1})]
+2026-02-17 10:03:15 - POST /api/datasets/users/record - Inserting record
+2026-02-17 10:03:15 - Request body: InsertRecordRequest(datasetName=users, data={index=1, name=User 1})
+2026-02-17 10:03:15 - Inserting record into dataset: users
+2026-02-17 10:03:15 - JSON validation successful. Serialized length: 41 chars
+2026-02-17 10:03:15 - Record inserted successfully. ID: a301418a-5c47-4419-9259-74635e7a8beb, Dataset: users
+2026-02-17 10:03:15 - Record inserted successfully. ID: a301418a-5c47-4419-9259-74635e7a8beb
+2026-02-17 10:03:15 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:15 - Writing [InsertRecordResponse(success=true, message=Record inserted successfully, recordId=a301418a-5c47-4419 (truncated)...]
+2026-02-17 10:03:15 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:15 - Read "application/json;charset=UTF-8" to [InsertRecordRequest(datasetName=users, data={index=2, name=User 2})]
+2026-02-17 10:03:15 - POST /api/datasets/users/record - Inserting record
+2026-02-17 10:03:15 - Request body: InsertRecordRequest(datasetName=users, data={index=2, name=User 2})
+2026-02-17 10:03:15 - Inserting record into dataset: users
+2026-02-17 10:03:15 - JSON validation successful. Serialized length: 41 chars
+2026-02-17 10:03:15 - Record inserted successfully. ID: dc234d15-c375-4797-a82c-345eb9f14c2b, Dataset: users
+2026-02-17 10:03:15 - Record inserted successfully. ID: dc234d15-c375-4797-a82c-345eb9f14c2b
+2026-02-17 10:03:15 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:15 - Writing [InsertRecordResponse(success=true, message=Record inserted successfully, recordId=dc234d15-c375-4797 (truncated)...]
+2026-02-17 10:03:15 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:15 - Read "application/json;charset=UTF-8" to [InsertRecordRequest(datasetName=users, data={index=3, name=User 3})]
+2026-02-17 10:03:15 - POST /api/datasets/users/record - Inserting record
+2026-02-17 10:03:15 - Request body: InsertRecordRequest(datasetName=users, data={index=3, name=User 3})
+2026-02-17 10:03:15 - Inserting record into dataset: users
+2026-02-17 10:03:15 - JSON validation successful. Serialized length: 41 chars
+2026-02-17 10:03:15 - Record inserted successfully. ID: 05b2e872-cc8c-4937-9721-74ad881a209e, Dataset: users
+2026-02-17 10:03:15 - Record inserted successfully. ID: 05b2e872-cc8c-4937-9721-74ad881a209e
+2026-02-17 10:03:15 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:15 - Writing [InsertRecordResponse(success=true, message=Record inserted successfully, recordId=05b2e872-cc8c-4937 (truncated)...]
+2026-02-17 10:03:15 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:15 - Read "application/json;charset=UTF-8" to [InsertRecordRequest(datasetName=users, data={index=4, name=User 4})]
+2026-02-17 10:03:15 - POST /api/datasets/users/record - Inserting record
+2026-02-17 10:03:15 - Request body: InsertRecordRequest(datasetName=users, data={index=4, name=User 4})
+2026-02-17 10:03:15 - Inserting record into dataset: users
+2026-02-17 10:03:15 - JSON validation successful. Serialized length: 41 chars
+2026-02-17 10:03:15 - Record inserted successfully. ID: f4a1375c-a286-4326-9331-9eabdabe5c99, Dataset: users
+2026-02-17 10:03:15 - Record inserted successfully. ID: f4a1375c-a286-4326-9331-9eabdabe5c99
+2026-02-17 10:03:15 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:15 - Writing [InsertRecordResponse(success=true, message=Record inserted successfully, recordId=f4a1375c-a286-4326 (truncated)...]
+2026-02-17 10:03:15 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:15 - Read "application/json;charset=UTF-8" to [InsertRecordRequest(datasetName=users, data={index=5, name=User 5})]
+2026-02-17 10:03:15 - POST /api/datasets/users/record - Inserting record
+2026-02-17 10:03:15 - Request body: InsertRecordRequest(datasetName=users, data={index=5, name=User 5})
+2026-02-17 10:03:15 - Inserting record into dataset: users
+2026-02-17 10:03:15 - JSON validation successful. Serialized length: 41 chars
+2026-02-17 10:03:15 - Record inserted successfully. ID: 7e3b28d1-e55d-4226-8f75-e390096c0e54, Dataset: users
+2026-02-17 10:03:15 - Record inserted successfully. ID: 7e3b28d1-e55d-4226-8f75-e390096c0e54
+2026-02-17 10:03:15 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:15 - Writing [InsertRecordResponse(success=true, message=Record inserted successfully, recordId=7e3b28d1-e55d-4226 (truncated)...]
+2026-02-17 10:03:15 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:15 - Read "application/json;charset=UTF-8" to [InsertRecordRequest(datasetName=users, data={index=6, name=User 6})]
+2026-02-17 10:03:15 - POST /api/datasets/users/record - Inserting record
+2026-02-17 10:03:15 - Request body: InsertRecordRequest(datasetName=users, data={index=6, name=User 6})
+2026-02-17 10:03:15 - Inserting record into dataset: users
+2026-02-17 10:03:15 - JSON validation successful. Serialized length: 41 chars
+2026-02-17 10:03:15 - Record inserted successfully. ID: 617371e9-6424-4014-8783-9d012a9476d6, Dataset: users
+2026-02-17 10:03:15 - Record inserted successfully. ID: 617371e9-6424-4014-8783-9d012a9476d6
+2026-02-17 10:03:15 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:15 - Writing [InsertRecordResponse(success=true, message=Record inserted successfully, recordId=617371e9-6424-4014 (truncated)...]
+2026-02-17 10:03:15 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:15 - Read "application/json;charset=UTF-8" to [InsertRecordRequest(datasetName=users, data={index=7, name=User 7})]
+2026-02-17 10:03:15 - POST /api/datasets/users/record - Inserting record
+2026-02-17 10:03:15 - Request body: InsertRecordRequest(datasetName=users, data={index=7, name=User 7})
+2026-02-17 10:03:15 - Inserting record into dataset: users
+2026-02-17 10:03:15 - JSON validation successful. Serialized length: 41 chars
+2026-02-17 10:03:15 - Record inserted successfully. ID: a53e142e-e356-4d96-ba57-18cfac46e3f4, Dataset: users
+2026-02-17 10:03:15 - Record inserted successfully. ID: a53e142e-e356-4d96-ba57-18cfac46e3f4
+2026-02-17 10:03:15 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:15 - Writing [InsertRecordResponse(success=true, message=Record inserted successfully, recordId=a53e142e-e356-4d96 (truncated)...]
+2026-02-17 10:03:15 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:15 - Read "application/json;charset=UTF-8" to [InsertRecordRequest(datasetName=users, data={index=8, name=User 8})]
+2026-02-17 10:03:15 - POST /api/datasets/users/record - Inserting record
+2026-02-17 10:03:15 - Request body: InsertRecordRequest(datasetName=users, data={index=8, name=User 8})
+2026-02-17 10:03:15 - Inserting record into dataset: users
+2026-02-17 10:03:15 - JSON validation successful. Serialized length: 41 chars
+2026-02-17 10:03:15 - Record inserted successfully. ID: 9d5aff4b-c8b6-402f-a243-6c29a09381d4, Dataset: users
+2026-02-17 10:03:15 - Record inserted successfully. ID: 9d5aff4b-c8b6-402f-a243-6c29a09381d4
+2026-02-17 10:03:15 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:15 - Writing [InsertRecordResponse(success=true, message=Record inserted successfully, recordId=9d5aff4b-c8b6-402f (truncated)...]
+2026-02-17 10:03:15 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:15 - Read "application/json;charset=UTF-8" to [InsertRecordRequest(datasetName=users, data={index=9, name=User 9})]
+2026-02-17 10:03:15 - POST /api/datasets/users/record - Inserting record
+2026-02-17 10:03:15 - Request body: InsertRecordRequest(datasetName=users, data={index=9, name=User 9})
+2026-02-17 10:03:15 - Inserting record into dataset: users
+2026-02-17 10:03:15 - JSON validation successful. Serialized length: 41 chars
+2026-02-17 10:03:15 - Record inserted successfully. ID: 0128249f-6c10-44ed-a1bf-c2695c70057e, Dataset: users
+2026-02-17 10:03:15 - Record inserted successfully. ID: 0128249f-6c10-44ed-a1bf-c2695c70057e
+2026-02-17 10:03:15 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:15 - Writing [InsertRecordResponse(success=true, message=Record inserted successfully, recordId=0128249f-6c10-44ed (truncated)...]
+2026-02-17 10:03:15 - 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-17 10:03:15 - 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-17 10:03:15 - 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-17 10:03:15 - 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-17 10:03:15 - 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-17 10:03:15 - 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-17 10:03:15 - 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-17 10:03:15 - 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-17 10:03:15 - 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-17 10:03:15 - 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        datasets
+        (created_at, data, dataset_name, is_deleted, updated_at, version, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-02-17 10:03:15 - 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0 
+    where
+        dr1_0.dataset_name=? 
+        and dr1_0.is_deleted=?
+Hibernate: 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0 
+    where
+        dr1_0.dataset_name=? 
+        and dr1_0.is_deleted=?
+]]></system-out>
+  </testcase>
+  <testcase name="testInsertRecord_MalformedJson" classname="com.freightfox.jsondataset.controller.DatasetControllerIntegrationTest" time="0.019">
+    <system-out><![CDATA[2026-02-17 10:03:15 - 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+Hibernate: 
+    select
+        dr1_0.id,
+        dr1_0.created_at,
+        dr1_0.data,
+        dr1_0.dataset_name,
+        dr1_0.is_deleted,
+        dr1_0.updated_at,
+        dr1_0.version 
+    from
+        datasets dr1_0
+2026-02-17 10:03:15 - Mapped to com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+2026-02-17 10:03:15 - Could not resolve parameter [1] in public org.springframework.http.ResponseEntity<com.freightfox.jsondataset.dto.response.InsertRecordResponse> com.freightfox.jsondataset.controller.DatasetController.insertRecord(java.lang.String,com.freightfox.jsondataset.dto.request.InsertRecordRequest): JSON parse error: Unexpected character ('i' (code 105)): was expecting double-quote to start field name
+2026-02-17 10:03:15 - Using @ExceptionHandler com.freightfox.jsondataset.exception.GlobalExceptionHandler#handleMalformedJsonException(HttpMessageNotReadableException, HttpServletRequest)
+2026-02-17 10:03:15 - Malformed JSON at /api/datasets/users/record: JSON parse error: Unexpected character ('i' (code 105)): was expecting double-quote to start field name
+2026-02-17 10:03:15 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-02-17 10:03:15 - Writing [ErrorResponse(timestamp=2026-02-17T10:03:15.320508700, status=400, error=Bad Request, message=Malfor (truncated)...]
+2026-02-17 10:03:15 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('i' (code 105)): was expecting double-quote to start field name]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/datasets/users/record
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"60"]
+             Body = {
+    "dataset_name": "users",
+    "data": {invalid json}
+}
+
+    Session Attrs = {}
+
+Handler:
+             Type = com.freightfox.jsondataset.controller.DatasetController
+           Method = com.freightfox.jsondataset.controller.DatasetController#insertRecord(String, InsertRecordRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.http.converter.HttpMessageNotReadableException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {
+  "timestamp" : "2026-02-17T10:03:15",
+  "status" : 400,
+  "error" : "Bad Request",
+  "message" : "Malformed JSON in request body",
+  "details" : [ "Unexpected character ('i' (code 105)): was expecting double-quote to start field name\n at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 3, column: 15]" ],
+  "path" : "/api/datasets/users/record",
+  "code" : "MALFORMED_JSON"
+}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+</testsuite>

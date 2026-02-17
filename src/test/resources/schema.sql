@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS datasets (
+    id UUID DEFAULT RANDOM_UUID() PRIMARY KEY,
+    dataset_name VARCHAR(255) NOT NULL,
+    data TEXT NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    is_deleted BOOLEAN NOT NULL DEFAULT FALSE,
+    version INTEGER NOT NULL DEFAULT 1
+);
+
+CREATE INDEX IF NOT EXISTS idx_datasets_name ON datasets(dataset_name);
+CREATE INDEX IF NOT EXISTS idx_datasets_name_active ON datasets(dataset_name, is_deleted);

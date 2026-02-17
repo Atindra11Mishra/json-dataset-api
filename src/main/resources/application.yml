@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: json-dataset-api
+  
+  profiles:
+    active: dev
+  
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+      indent-output: true
+    deserialization:
+      fail-on-unknown-properties: false
+    default-property-inclusion: non_null
+
+  # Enable 404 exception throwing (for GlobalExceptionHandler)
+  mvc:
+    throw-exception-if-no-handler-found: true
+  
+  # Disable default static resource handling (to catch 404s)
+  web:
+    resources:
+      add-mappings: false
+
+server:
+  port: 8080
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: on_param
+    include-exception: false
+
+logging:
+  level:
+    root: INFO
+    com.freightfox.jsondataset: DEBUG
+    org.springframework.web: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"

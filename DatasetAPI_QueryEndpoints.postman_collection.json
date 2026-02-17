@@ -1,0 +1,400 @@
+{
+  "info": {
+    "name": "Dataset API - Query Endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Setup - Insert Test Data",
+      "item": [
+        {
+          "name": "Insert User 1 (John, 30, active)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"dataset_name\": \"users\",\n  \"data\": {\n    \"name\": \"John Doe\",\n    \"age\": 30,\n    \"status\": \"active\",\n    \"email\": \"john@example.com\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/datasets/users/record",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "datasets", "users", "record"]
+            }
+          }
+        },
+        {
+          "name": "Insert User 2 (Jane, 25, active)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"dataset_name\": \"users\",\n  \"data\": {\n    \"name\": \"Jane Smith\",\n    \"age\": 25,\n    \"status\": \"active\",\n    \"email\": \"jane@example.com\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/datasets/users/record",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "datasets", "users", "record"]
+            }
+          }
+        },
+        {
+          "name": "Insert User 3 (Bob, 45, inactive)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"dataset_name\": \"users\",\n  \"data\": {\n    \"name\": \"Bob Johnson\",\n    \"age\": 45,\n    \"status\": \"inactive\",\n    \"email\": \"bob@example.com\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/datasets/users/record",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "datasets", "users", "record"]
+            }
+          }
+        },
+        {
+          "name": "Insert User 4 (Alice, 35, pending)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"dataset_name\": \"users\",\n  \"data\": {\n    \"name\": \"Alice Brown\",\n    \"age\": 35,\n    \"status\": \"pending\",\n    \"email\": \"alice@example.com\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/datasets/users/record",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "datasets", "users", "record"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "2. Group-By Queries",
+      "item": [
+        {
+          "name": "Group by status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/datasets/users/query?groupBy=status",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "datasets", "users", "query"],
+              "query": [
+                {
+                  "key": "groupBy",
+                  "value": "status"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Group by non-existent field",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/datasets/users/query?groupBy=department",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "datasets", "users", "query"],
+              "query": [
+                {
+                  "key": "groupBy",
+                  "value": "department"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "3. Sort-By Queries",
+      "item": [
+        {
+          "name": "Sort by age (ascending)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/datasets/users/query?sortBy=age&order=asc",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "datasets", "users", "query"],
+              "query": [
+                {
+                  "key": "sortBy",
+                  "value": "age"
+                },
+                {
+                  "key": "order",
+                  "value": "asc"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Sort by age (descending)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/datasets/users/query?sortBy=age&order=desc",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "datasets", "users", "query"],
+              "query": [
+                {
+                  "key": "sortBy",
+                  "value": "age"
+                },
+                {
+                  "key": "order",
+                  "value": "desc"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Sort by name (string field)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/datasets/users/query?sortBy=name&order=asc",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "datasets", "users", "query"],
+              "query": [
+                {
+                  "key": "sortBy",
+                  "value": "name"
+                },
+                {
+                  "key": "order",
+                  "value": "asc"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Sort with default order (no order param)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/datasets/users/query?sortBy=age",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "datasets", "users", "query"],
+              "query": [
+                {
+                  "key": "sortBy",
+                  "value": "age"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "4. Group-By-Then-Sort Queries",
+      "item": [
+        {
+          "name": "Group by status, sort by age (asc)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/datasets/users/query?groupBy=status&sortBy=age&order=asc",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "datasets", "users", "query"],
+              "query": [
+                {
+                  "key": "groupBy",
+                  "value": "status"
+                },
+                {
+                  "key": "sortBy",
+                  "value": "age"
+                },
+                {
+                  "key": "order",
+                  "value": "asc"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Group by status, sort by age (desc)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/datasets/users/query?groupBy=status&sortBy=age&order=desc",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "datasets", "users", "query"],
+              "query": [
+                {
+                  "key": "groupBy",
+                  "value": "status"
+                },
+                {
+                  "key": "sortBy",
+                  "value": "age"
+                },
+                {
+                  "key": "order",
+                  "value": "desc"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Group by status, sort by name",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/datasets/users/query?groupBy=status&sortBy=name&order=asc",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "datasets", "users", "query"],
+              "query": [
+                {
+                  "key": "groupBy",
+                  "value": "status"
+                },
+                {
+                  "key": "sortBy",
+                  "value": "name"
+                },
+                {
+                  "key": "order",
+                  "value": "asc"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "5. Error Cases",
+      "item": [
+        {
+          "name": "No parameters (should fail)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/datasets/users/query",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "datasets", "users", "query"]
+            }
+          }
+        },
+        {
+          "name": "Invalid sort order (should fail)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/datasets/users/query?sortBy=age&order=invalid",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "datasets", "users", "query"],
+              "query": [
+                {
+                  "key": "sortBy",
+                  "value": "age"
+                },
+                {
+                  "key": "order",
+                  "value": "invalid"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Empty dataset",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/datasets/nonexistent/query?groupBy=status",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "datasets", "nonexistent", "query"],
+              "query": [
+                {
+                  "key": "groupBy",
+                  "value": "status"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

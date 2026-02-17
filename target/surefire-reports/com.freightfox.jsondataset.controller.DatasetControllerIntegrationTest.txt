@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.freightfox.jsondataset.controller.DatasetControllerIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.131 s - in com.freightfox.jsondataset.controller.DatasetControllerIntegrationTest
